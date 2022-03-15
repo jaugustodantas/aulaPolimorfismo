@@ -3,19 +3,8 @@ public class Funcionario {
     private String nome;
     private String cpf;
     protected double salario;
-    //private int tipo; // 0= funcionario padrão, 1 = gerente, 2 = diretor
 
-    //inicio construtores
-//   public Funcionario(String nome, String cpf,double salario,int tipo){
-//       this.nome = nome;
-//       this.cpf = cpf;
-//        this.salario = salario;
-//         this.tipo = tipo;
-//     }
-
-    //fim construtores
-
-    // começo dos sets
+    
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -40,10 +29,7 @@ public class Funcionario {
     public double getSalario() {
         return salario;
     }
-//    public int getTipo() {
-//        return tipo;
-//    }
-    //fim dos gets
+
 
     //metodos
     public double bonificacao(){

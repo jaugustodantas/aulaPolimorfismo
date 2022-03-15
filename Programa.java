@@ -1,15 +1,20 @@
 public class Programa {
 
     public static void main(String[] args) {
-        Funcionario funcionario = new Funcionario();
-        Funcionario funcionario2 = new Funcionario();
-        Funcionario funcionario3 = new Funcionario();
+        Gerente g = new Gerente();
+        Funcionario f = new Funcionario();
+        EditorVideo ev = new EditorVideo();
 
-        System.out.println(funcionario.bonificacao());
-        System.out.println(funcionario2.bonificacao());
-        System.out.println(funcionario3.bonificacao());
+        g.setSalario(5000);
+        ev.setSalario(2500);
+        f.setSalario(2000);
+        
+        CalculoBonificacao c = new CalculoBonificacao();
+        c.registra(g);
+        c.registra(ev);
+        c.registra(f);
 
-        System.out.println(funcionario.getCpf());
+        System.out.println(c.getSoma());
         
     }
 }
